@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>com.nkirkby.startup</string>
+	<string>com.nkirkby.startup.google.chrome.browser</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/Applications/Google Chrome.app/Contents/MacOS/Google Chrome</string>
