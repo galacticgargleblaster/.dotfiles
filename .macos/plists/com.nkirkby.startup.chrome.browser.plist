@@ -10,6 +10,8 @@
 		<string>http://intra.42.us.org/</string>
 		<string>https://www.evernote.com/</string>
 		<string>/nfs/2018/n/nkirkby/repos/cdn</string>
+		<string>https://mail.google.com/mail/u/0/#inbox</string>
+		<string>https://42schoolsiliconvalley.slack.com/</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
