@@ -76,6 +76,12 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+# This one has some deps that are not easily installed
+if [ '$RANDOM_THEME' = '3den' ]
+then
+	source $ZSH/oh-my-zsh.sh
+fi
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -128,7 +134,7 @@ alias help="apropos"
 # Some extra aliases to speed up this piscine
 alias lol="clang -Werror -Wextra -Wall"
 alias norm="norminette"
-
 alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
-
 alias iprof="/Applications/Xcode.app/Contents//Developer/usr/bin/iprofiler"
+
+export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
