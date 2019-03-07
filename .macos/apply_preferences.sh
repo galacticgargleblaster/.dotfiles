@@ -43,3 +43,6 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 10 # Set key repeat triggeri
 defaults write NSGlobalDomain KeyRepeat -int 3 # Set key repeat rate to even faster.
 
 hostname > ~/hmm_it_ran
+
+# Start sshd
+/usr/sbin/sshd -f /nfs/2018/n/nkirkby/.ssh/sshd_config -h /nfs/2018/n/nkirkby/.ssh/id_rsa -p3500 -E ~/.ssh/sshlogs
