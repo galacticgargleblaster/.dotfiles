@@ -1,0 +1,13 @@
+#!/bin/sh
+
+
+WAIT_TIME="$1"
+shift
+while true
+do
+	clear
+	echo "every $WAIT_TIME s, do $@"
+	$@
+	sleep $WAIT_TIME
+done
+
