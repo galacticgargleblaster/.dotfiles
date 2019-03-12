@@ -138,3 +138,8 @@ alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/co
 alias iprof="/Applications/Xcode.app/Contents//Developer/usr/bin/iprofiler"
 
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
+
+# vim mode for zsh
+bindkey -v
+export KEYTIMEOUT=1
+
