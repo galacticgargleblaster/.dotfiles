@@ -142,4 +142,6 @@ export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 # vim mode for zsh
 bindkey -v
 export KEYTIMEOUT=1
+bindkey '^R' history-incremental-search-backward  # apparently ctrl+r for reverse search is an emacs feature
+
 
