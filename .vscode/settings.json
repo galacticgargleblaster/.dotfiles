@@ -1,0 +1,19 @@
+{
+    "editor.tabSize": 4,
+    "editor.autoIndent": true,
+    "editor.insertSpaces": false,
+    "files.associations": {
+        "*.h": "c"
+    },
+    "workbench.editor.showTabs": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "bsq/.prior_art/repos/*": true,
+        "fillit/prior_art/*": true
+    },
+    "C_Cpp.default.includePath": ["fillit"]
+}

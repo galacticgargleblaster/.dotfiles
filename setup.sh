@@ -4,10 +4,11 @@ SYMLINKABLES=(
 .macos
 .tmux
 .tmux.conf
+.vscode
 )
 
 for i in "${SYMLINKABLES[@]}"
 do
-	ln -sfv `pwd`/$i $HOME/$i
+	ln -shfv `pwd`/$i $HOME/$i
 done
 
