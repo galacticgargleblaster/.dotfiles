@@ -1,3 +1,5 @@
+git submodule init && git submodule update
+
 SYMLINKABLES=(
 .profile
 .zshrc
@@ -5,6 +7,7 @@ SYMLINKABLES=(
 .tmux
 .tmux.conf
 .vscode
+.oh-my-zsh
 )
 
 for i in "${SYMLINKABLES[@]}"
