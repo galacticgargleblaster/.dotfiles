@@ -15,5 +15,8 @@
         "bsq/.prior_art/repos/*": true,
         "fillit/prior_art/*": true
     },
-    "C_Cpp.default.includePath": ["fillit"]
+    "C_Cpp.default.includePath": [
+        "fillit"
+    ],
+    "workbench.colorTheme": "Solarized Light"
 }

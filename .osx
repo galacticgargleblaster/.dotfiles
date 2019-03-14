@@ -1,0 +1,8 @@
+#! /bin/sh
+
+export SSD=/Volumes/ssd/
+
+if [[ -z $SSD ]]
+then
+	rsync -r $SSD/nkirkby/.ssh ~/.ssh
+fi

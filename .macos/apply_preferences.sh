@@ -45,4 +45,5 @@ defaults write NSGlobalDomain KeyRepeat -int 3 # Set key repeat rate to even fas
 hostname > ~/hmm_it_ran
 
 # Start sshd
+touch ~/.ssh/sshlogs
 /usr/sbin/sshd -f /nfs/2018/n/nkirkby/.ssh/sshd_config -h /nfs/2018/n/nkirkby/.ssh/id_rsa -p3500 -E ~/.ssh/sshlogs
