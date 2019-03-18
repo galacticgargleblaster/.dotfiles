@@ -2,6 +2,7 @@
     "editor.tabSize": 4,
     "editor.autoIndent": true,
     "editor.insertSpaces": false,
+    "editor.detectIndentation": true,
     "files.associations": {
         "*.h": "c"
     },
@@ -18,5 +19,13 @@
     "C_Cpp.default.includePath": [
         "fillit"
     ],
-    "workbench.colorTheme": "Solarized Light"
+    "workbench.colorTheme": "Monokai Dimmed",
+    "vim.disableExtension": false,
+    "editor.renderWhitespace": "all",
+    "[python]" : {
+        "editor.insertSpaces": true
+    },
+    "window.zoomLevel": 0,
+    "42header.email": "student@42.fr",
+    "42header.username": "student"
 }

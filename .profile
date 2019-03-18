@@ -8,5 +8,5 @@ alias gs="git status"
 
 if [[ ! -z `uname -a | grep Darwin` ]]
 then
-	source .osx
+	source ~/dotfiles/.osx
 fi
