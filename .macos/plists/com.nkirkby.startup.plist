@@ -6,7 +6,7 @@
 	<string>com.nkirkby.startup</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/nfs/2018/n/nkirkby/.dotfiles/.macos/apply_preferences.sh</string>
+		<string>/nfs/2018/n/nkirkby/dotfiles/.macos/apply_preferences.sh</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>

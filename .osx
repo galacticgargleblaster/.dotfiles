@@ -6,3 +6,5 @@ if [[ -z $SSD ]]
 then
 	rsync -r $SSD/nkirkby/.ssh ~/.ssh
 fi
+
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
