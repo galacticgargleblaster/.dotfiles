@@ -134,7 +134,7 @@ alias help="apropos"
 # Some extra aliases to speed up this piscine
 alias lol="clang -Werror -Wextra -Wall"
 alias norm="norminette"
-alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
+alias code="/nfs/2018/n/nkirkby/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
 alias iprof="/Applications/Xcode.app/Contents//Developer/usr/bin/iprofiler"
 
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"

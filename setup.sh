@@ -23,4 +23,6 @@ then
 
 	rm -rf ~/Library/Application\ Support/Code/User
 	ln -sfv ~/dotfiles/.vscode/ ~/Library/Application\ Support/Code/User
+	ln -sfv ~/dotfiles/.vscode/extensions ~/Applications/code-portable-data
+	ln -sfv ~/dotfiles/.vscode/ ~/Applications/code-portable-data
 fi

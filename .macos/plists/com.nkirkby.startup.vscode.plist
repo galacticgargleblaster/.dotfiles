@@ -6,7 +6,7 @@
 	<string>com.nkirkby.startup.vscode</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code</string>
+		<string>/nfs/2018/n/nkirkby/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code</string>
 		<string>/nfs/2018/n/nkirkby/repos</string>
 	</array>
 	<key>RunAtLoad</key>
