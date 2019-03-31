@@ -1,23 +1,18 @@
+#!/bin/bash
 git submodule init && git submodule update
 
 SYMLINKABLES=(
 .profile
 .zshrc
-.macos # this one's a directory
-.osx  # this one's a file
 .tmux
 .tmux.conf
 .vscode
 .oh-my-zsh
 )
 
-for i in "${SYMLINKABLES[@]}"
-do
-	ln -shfv `pwd`/$i $HOME/$i
-done
-
 if [[ ! -z `uname -a | grep Darwin` ]]
 then
+	SYMLINKABLES=("${SYMLINKABLES[@]}" ".macos" ".osx")
 	ln -shfv ~/.macos/plists/* ~/Library/LaunchAgents/
 	launchctl load -w ~/Library/LaunchAgents/*
 
@@ -26,3 +21,8 @@ then
 	ln -sfv ~/dotfiles/.vscode/extensions ~/Applications/code-portable-data
 	ln -sfv ~/dotfiles/.vscode/ ~/Applications/code-portable-data
 fi
+
+for i in "${SYMLINKABLES[@]}"
+do
+	ln -sfvT `pwd`/$i $HOME/$i
+done
