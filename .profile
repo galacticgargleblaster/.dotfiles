@@ -26,12 +26,21 @@ fi
 
 if [[ ! -z `uname -a | grep Darwin` ]]
 then
-	alias norm="~/Library/Norminette/norminette"
+	# Some extra aliases to speed up this piscine
+	alias lol="clang -Werror -Wextra -Wall"
+	alias norm="norminette"
+	alias code="/nfs/2018/n/nkirkby/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
+	alias iprof="/Applications/Xcode.app/Contents//Developer/usr/bin/iprofiler"
+
+export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
 	#Add ipython to path
 	export PATH="${PATH}:/nfs/2018/n/nkirkby/Library/Python/3.7/bin"
 	export PATH=$PATH:/nfs/2018/n/nkirkby/.lldb/voltron_venv/bin
 
-	alias gs="git status"
+	# add brew to path.  !brew to marvin for more information
+	mkdir -p /tmp/.$(whoami)-brew-locks
+	export PATH="$HOME/.brew/bin:$PATH"
+
 	source ~/dotfiles/.osx
 fi
