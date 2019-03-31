@@ -119,10 +119,6 @@ bindkey '^[[1;9D' backward-word
 # Load environment variables in the user profile
 source ~/.profile
 
-# add brew to path.  !brew to marvin for more information
-mkdir -p /tmp/.$(whoami)-brew-locks
-export PATH="$HOME/.brew/bin:$PATH"
-
 # Configure go_c alias for a C repl.
 go_libs="-lm"
 go_flags="-g -Wall -Werror -Wextra -include ~/.allheads.h -O3"
@@ -130,12 +126,6 @@ alias go_c="clang -xc - $go_libs $go_flags << '---' && ./a.out"
 alias go_c_dbg="clang -xc -g - $go_libs $go_flags << '---' && lldb a.out"
 alias go_c_soon="clang -xc - $go_libs $go_flags << '---'"
 alias help="apropos"
-
-# Some extra aliases to speed up this piscine
-alias lol="clang -Werror -Wextra -Wall"
-alias norm="norminette"
-alias code="/nfs/2018/n/nkirkby/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
-alias iprof="/Applications/Xcode.app/Contents//Developer/usr/bin/iprofiler"
 
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
