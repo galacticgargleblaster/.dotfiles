@@ -44,3 +44,7 @@ export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
 	source ~/dotfiles/.osx
 fi
+
+
+
+alias gs="git status"

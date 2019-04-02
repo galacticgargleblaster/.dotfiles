@@ -77,7 +77,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # This one has some deps that are not easily installed
-if [ '$RANDOM_THEME' = '3den' ]
+if [[ $RANDOM_THEME == *'3den'* ]]
 then
 	source $ZSH/oh-my-zsh.sh
 fi
