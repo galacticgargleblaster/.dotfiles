@@ -26,17 +26,21 @@ fi
 
 if [[ ! -z `uname -a | grep Darwin` ]]
 then
-	# Some extra aliases to speed up this piscine
 	alias lol="clang -Werror -Wextra -Wall"
 	alias norm="norminette"
 	alias code="/nfs/2018/n/nkirkby/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
 	alias iprof="/Applications/Xcode.app/Contents//Developer/usr/bin/iprofiler"
+	alias xpra="/nfs/2018/n/nkirkby/Applications/Xpra.app/Contents/MacOS/Xpra"
 
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
 	#Add ipython to path
 	export PATH="${PATH}:/nfs/2018/n/nkirkby/Library/Python/3.7/bin"
 	export PATH=$PATH:/nfs/2018/n/nkirkby/.lldb/voltron_venv/bin
+
+	# add gcc to the path, the real GCC! compiled from source!  
+	# https://solarianprogrammer.com/2017/05/21/compiling-gcc-macos/
+	export PATH="$HOME/.local/gcc-8.3/bin:$PATH"
 
 	# add brew to path.  !brew to marvin for more information
 	mkdir -p /tmp/.$(whoami)-brew-locks
