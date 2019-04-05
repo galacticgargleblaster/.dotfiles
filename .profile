@@ -41,6 +41,18 @@ export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 	# add gcc to the path, the real GCC! compiled from source!  
 	# https://solarianprogrammer.com/2017/05/21/compiling-gcc-macos/
 	export PATH="$HOME/.local/gcc-8.3/bin:$PATH"
+	# Libraries have been installed in:
+	#    /nfs/2018/n/nkirkby/.local/gcc-8.3/lib
+	# 
+	# If you ever happen to want to link against installed libraries
+	# in a given directory, LIBDIR, you must either use libtool, and
+	# specify the full pathname of the library, or use the `-LLIBDIR'
+	# flag during linking and do at least one of the following:
+	#    - add LIBDIR to the `DYLD_LIBRARY_PATH' environment variable
+	#      during execution
+	# 
+	# See any operating system documentation about shared libraries for
+	# more information, such as the ld(1) and ld.so(8) manual pages.
 
 	# add brew to path.  !brew to marvin for more information
 	mkdir -p /tmp/.$(whoami)-brew-locks
