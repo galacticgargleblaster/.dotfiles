@@ -6,6 +6,7 @@ SYMLINKABLES=(
 .zshrc
 .tmux
 .tmux.conf
+.vimrc
 )
 
 if [[ ! -z `uname -a | grep Darwin` ]]
@@ -18,14 +19,16 @@ then
 	ln -sfv ~/dotfiles/.vscode/ ~/Library/Application\ Support/Code/User
 	ln -sfv ~/dotfiles/.vscode/extensions ~/Applications/code-portable-data
 	ln -sfv ~/dotfiles/.vscode/ ~/Applications/code-portable-data
+	LN_FLAGS='sfv'
 fi
 
 if [[ ! -z `uname -a | grep Linux` ]]
 then
-	ln -sfvT ~/repos/dotfiles/.vscode ~/.vscode
+	LN_FLAGS='sfvT'
+	ln -$LN_FLAGS ~/repos/dotfiles/.vscode ~/.vscode
 fi
 
 for i in "${SYMLINKABLES[@]}"
 do
-	ln -sfvT `pwd`/$i $HOME/$i
+	ln -$LN_FLAGS `pwd`/$i $HOME/$i
 done
