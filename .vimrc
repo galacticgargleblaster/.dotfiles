@@ -1,2 +1,3 @@
-:set incsearch
-:set syntax 
+set incsearch
+syntax on
+set ruler
